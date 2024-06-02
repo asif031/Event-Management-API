@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "788f997e-1509-460d-a22d-68c37897ada7",
+		"name": "Events",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35191983"
+	},
+	"item": [
+		{
+			"name": "show all events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}events",
+					"host": [
+						"{{base_url}}events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show single event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}events/1",
+					"host": [
+						"{{base_url}}events"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create an event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Anniversary\",\r\n    \"start_time\" : \"2024-06-12 15:00:00\",\r\n    \"end_time\" : \"2024-09-12 15:00:00\"\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}events",
+					"host": [
+						"{{base_url}}events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update an event",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Anniversary\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}events/203",
+					"host": [
+						"{{base_url}}events"
+					],
+					"path": [
+						"203"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete an event",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Anniversary\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}events/",
+					"host": [
+						"{{base_url}}events"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

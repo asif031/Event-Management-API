@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "25016964-0d61-46db-815e-375dba5f8aee",
+		"name": "Attendees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35191983"
+	},
+	"item": [
+		{
+			"name": "Attendees",
+			"item": [
+				{
+					"name": "Delete an Attendee",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}event/10/attendees/1945",
+							"host": [
+								"{{base_url}}event"
+							],
+							"path": [
+								"10",
+								"attendees",
+								"1945"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show single attendee",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}event/10/attendees/1945",
+							"host": [
+								"{{base_url}}event"
+							],
+							"path": [
+								"10",
+								"attendees",
+								"1945"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show all attendees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}event/10/attendees",
+							"host": [
+								"{{base_url}}event"
+							],
+							"path": [
+								"10",
+								"attendees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new attendee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}event/10/attendees",
+							"host": [
+								"{{base_url}}event"
+							],
+							"path": [
+								"10",
+								"attendees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

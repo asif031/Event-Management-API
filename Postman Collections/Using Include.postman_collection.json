@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "6296fde6-efa0-4b42-a796-bed6525bd715",
+		"name": "Using Include",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35191983"
+	},
+	"item": [
+		{
+			"name": "show single event including user, attendees and attendees.user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}events/98?include=user,attendees,attendees.user",
+					"host": [
+						"{{base_url}}events"
+					],
+					"path": [
+						"98"
+					],
+					"query": [
+						{
+							"key": "include",
+							"value": "user,attendees,attendees.user"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all events including attendees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}events?include=attendees",
+					"host": [
+						"{{base_url}}events"
+					],
+					"query": [
+						{
+							"key": "include",
+							"value": "attendees"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

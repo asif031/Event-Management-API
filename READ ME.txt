@@ -1,0 +1,4 @@
+->first run the docker compose file
+->then migrate with seed
+->then run "php artisan serve"
+->finally Use Postman to check api responses
